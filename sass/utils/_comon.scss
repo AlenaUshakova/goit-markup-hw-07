@@ -1,0 +1,50 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    @include LetterSpacing ();
+    color:$primary-text-color;
+    background-color: $primary-white-color;
+}
+
+.container {
+    width: 1200px;
+    @include Margin($s-top: 0, $s-bottom: 0, $s-left: auto, $s-right: auto);
+    @include Padding($s-top: 0, $s-bottom: 0, $s-left: 15px, $s-right: 15px);
+}
+
+.image {
+    display: block;
+    width: 100%;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    @include FontSLineH ($Fsize: 26px, $Lheight: 1.19);
+    text-decoration: none;
+    color: $accent-color;
+}
+
+.section {
+    @include Padding($s-top: 94px, $s-bottom: 94px, $s-left: 0, $s-right: 0);
+
+        &__title{
+            @include Margin($s-top: 0, $s-bottom: 50px, $s-left: 0, $s-right: 0);
+            @include FontSLineH ($Fsize: 36px, $Lheight: 1.17);
+            text-align: center;
+            color: $title-text-color;
+        }
+}

@@ -1,0 +1,34 @@
+.benefits {
+    @include Padding($s-top: 94px, $s-bottom: 47px, $s-left: 0, $s-right: 0);
+}
+
+.benefits__list {
+    @extend %ul;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.benefits__item {
+    flex-basis: calc((100% - 90px) / 4);
+}
+
+.thumb {
+    @include centeredFlex($type: flex, $alicentered: center, $jucentered: center);
+    height: 120px;
+    border-radius: 4px;
+    background-color: $accent-bg-color;
+}
+
+.benefits__title {
+    @include Margin($s-top: 0, $s-bottom: 10px, $s-left: 0, $s-right: 0);
+    @include Padding($s-top: 20px, $s-bottom: 0, $s-left: 0, $s-right: 0);
+    @include FontSLineH();
+    text-transform: uppercase;
+    color: $title-text-color;
+}
+
+.benefits__text {
+    @include Margin();
+    @include FontSLineH($Fsize: 14px, $Lheight: 1.17);
+}

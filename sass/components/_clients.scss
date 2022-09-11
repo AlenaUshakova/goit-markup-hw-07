@@ -1,0 +1,28 @@
+.clients__list {
+    @extend %ul;
+    display: flex;
+}
+
+.clients__item:not(:last-child) {
+    @include Margin($s-top: 0, $s-bottom: 0, $s-left: 0, $s-right: 30px);
+}
+
+.clients__link {
+    @include centeredFlex($type: flex, $alicentered: center, $jucentered: center);
+    height: 92px;
+    width: 170px;
+    border: 1px solid $icon-link-color;
+    border-radius: 4px;
+    color: $icon-link-color;
+
+    transition: border-color 250ms $cubic-bezier, color 250ms $cubic-bezier;
+        &:hover,
+        &:focus{
+            color: $accent-color;
+            border-color: $accent-color;
+        }
+}
+
+.clients__icon {
+    fill: currentColor;
+}
