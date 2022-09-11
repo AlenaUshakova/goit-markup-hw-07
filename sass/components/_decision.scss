@@ -3,8 +3,8 @@
     height: 600px;
     @include Margin($s-top: 0, $s-bottom: 0, $s-left: auto, $s-right: auto);
     @include Padding($s-top: 200px, $s-bottom: 200px, $s-left: 0, $s-right: 0);
-    background-image: linear-gradient(to right, $linerGdadient-color,$linerGdadient-color),
-     url(../images/hero.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
